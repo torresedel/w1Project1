@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:paddingBottom="40dp"
+    android:paddingLeft="40dp"
+    android:paddingRight="40dp"
+    android:paddingTop="40dp"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.admin.navigationbar.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+
+    <SeekBar
+        android:id="@+id/sbSeekTo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="30dp"/>
+
+    <Button
+        android:id="@+id/btnPlay"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbSeekTo"
+        android:onClick="mngSound"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:text="Play" />
+
+    <Button
+        android:id="@+id/btnPause"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/sbSeekTo"
+        android:layout_toEndOf="@+id/btnPlay"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_toRightOf="@+id/btnPlay"
+        android:onClick="mngSound"
+        android:text="Pause" />
+
+    <Button
+        android:id="@+id/btnStop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingRight="30dp"
+        android:paddingLeft="30dp"
+        android:layout_below="@+id/sbSeekTo"
+        android:layout_toEndOf="@+id/btnPause"
+        android:layout_toRightOf="@+id/btnPause"
+        android:onClick="mngSound"
+        android:text="Stop" />
+
+
+</RelativeLayout>

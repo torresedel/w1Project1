@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_mediaPly"
+            android:icon="@drawable/ic_menu_camera"
+            android:title="Media Player" />
+        <item
+            android:id="@+id/nav_webView"
+            android:icon="@drawable/ic_menu_gallery"
+            android:title="Web-View" />
+        <item
+            android:id="@+id/nav_pdfView"
+            android:icon="@drawable/ic_menu_slideshow"
+            android:title="PDF View" />
+    </group>
+
+</menu>
